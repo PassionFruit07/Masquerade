@@ -25,7 +25,6 @@ public class PlayerMovemnt : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
             movementSpeed = movementSpeed / 2;
-
         }
     }
 
@@ -36,8 +35,9 @@ public class PlayerMovemnt : MonoBehaviour
 
         Vector3 forwardMovement = transform.forward * vertInput;
         Vector3 rightMovement = transform.right * horiInput;
+        Vector3 movementSum = forwardMovement + rightMovement;
 
-        chController.SimpleMove(forwardMovement + rightMovement);
+        chController.SimpleMove(movementSum);
     }
 
 }

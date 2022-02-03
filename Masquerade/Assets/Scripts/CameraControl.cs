@@ -11,17 +11,13 @@ public class CameraControl : MonoBehaviour
 
     private void Awake()
     {
-        LockCursor();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
     }
 
     void Update()
     {
         CameraRotation();
-    }
-
-    void LockCursor()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void CameraRotation()
