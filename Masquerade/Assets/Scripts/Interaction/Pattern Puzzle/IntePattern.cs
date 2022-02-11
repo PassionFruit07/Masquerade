@@ -5,9 +5,9 @@ using System;
 
 public class IntePattern : MonoBehaviour, IInteractable
 {
-    public static event Action<int> Selected = delegate { };
+    public static event Action<int, Renderer> Selected = delegate { };
 
-    [SerializeField] Material defaulfM, selectedM;
+    [SerializeField] Material selectedM;
     MeshRenderer render;
     [SerializeField] int cubeOrder;
 
@@ -16,15 +16,10 @@ public class IntePattern : MonoBehaviour, IInteractable
         render = GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Select()
     {
         render.material = selectedM;
-        Selected(cubeOrder);
+        Selected(cubeOrder, render);
         Debug.Log("You clicked the " + name + " cube");
     }
 

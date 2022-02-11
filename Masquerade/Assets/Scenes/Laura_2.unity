@@ -324,7 +324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b576f4fa4b4f74d921b24b7bb5bd6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaulfM: {fileID: 2100000, guid: c0d6767641480db41b2f656ef6ecd562, type: 2}
   selectedM: {fileID: 2100000, guid: 21534d117abd3c34bbe11f7b5baaa118, type: 2}
   cubeOrder: 3
 --- !u!1 &256203521
@@ -531,7 +530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b576f4fa4b4f74d921b24b7bb5bd6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaulfM: {fileID: 2100000, guid: c0d6767641480db41b2f656ef6ecd562, type: 2}
   selectedM: {fileID: 2100000, guid: 21534d117abd3c34bbe11f7b5baaa118, type: 2}
   cubeOrder: 2
 --- !u!1 &400171168
@@ -1134,7 +1132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b576f4fa4b4f74d921b24b7bb5bd6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaulfM: {fileID: 2100000, guid: c0d6767641480db41b2f656ef6ecd562, type: 2}
   selectedM: {fileID: 2100000, guid: 21534d117abd3c34bbe11f7b5baaa118, type: 2}
   cubeOrder: 4
 --- !u!1 &963194225
@@ -1400,6 +1397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: 00000000000000000000000000000000
+  defaulfM: {fileID: 2100000, guid: c0d6767641480db41b2f656ef6ecd562, type: 2}
 --- !u!1 &1189452172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 153ba02d0314f0044ba5699944c51e9e, type: 3}
@@ -1962,7 +1960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b576f4fa4b4f74d921b24b7bb5bd6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaulfM: {fileID: 2100000, guid: c0d6767641480db41b2f656ef6ecd562, type: 2}
   selectedM: {fileID: 2100000, guid: 21534d117abd3c34bbe11f7b5baaa118, type: 2}
   cubeOrder: 1
 --- !u!1001 &2038571306
