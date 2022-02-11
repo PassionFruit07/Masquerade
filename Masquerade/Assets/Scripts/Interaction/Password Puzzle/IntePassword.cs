@@ -7,10 +7,10 @@ public class IntePassword : MonoBehaviour, IInteractable
 {
     public static event Action<string, int> Rotated = delegate { };
 
-    private bool canCoroutine;
-    private int numShown;
-    [SerializeField] int startNum;
-    [SerializeField] float waitRotate;
+    private bool canCoroutine;  // a safe-fail 'cause I have trust issues
+    private int numShown; // the current number on the lock
+    [SerializeField] int startNum; //the starting number on the lock
+    [SerializeField] float waitRotate; //wait time for the courutine
 
     private void Start()
     {
@@ -20,12 +20,12 @@ public class IntePassword : MonoBehaviour, IInteractable
     public void Select()
     {
         if (canCoroutine) StartCoroutine("RotateWheel"); //puedo escuchar a Serna quejarse
-        Debug.Log("action");
+        Debug.Log("You spun the " + name + " wheel");
     }
 
     private IEnumerator RotateWheel()
     {
-        canCoroutine = false; //solo un safe-fail porque I have trust issues
+        canCoroutine = false; 
         
         //Esta rotacion podria ser un Lerp but I hate those so yeah
         // Y no se que come mas recursos, demas que el Lerp
