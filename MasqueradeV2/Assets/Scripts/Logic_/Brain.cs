@@ -34,9 +34,6 @@ public class Brain : MonoBehaviour
 
     private void Start()
     {
-        //_brain = this;
-        //SaveTrigger.saveTrigger.saveData.day = 4;
-
         if (restart)
         {
             SaveTrigger.saveTrigger.Guardar();
@@ -51,11 +48,9 @@ public class Brain : MonoBehaviour
         {
             estado = EstadosDeJuego.normal;
             FungusReactions.fungusCode.tpToStart();
-            Debug.Log("mi perro si estoy X2");
         }
         else
         {
-            Debug.Log("mi perro si estoy");
             estado = EstadosDeJuego.tutorial; // o cinemática
             FungusReactions.fungusCode.PlayAnimaticOneTime();
             //Correr cinemática y al terminar dialogo fungus
