@@ -599,6 +599,7 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
 --- !u!1001 &1203648694
+
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -668,6 +669,7 @@ PrefabInstance:
     - target: {fileID: 689900830393497922, guid: 3fdbf98d268fed547996977c56d62ea4,
         type: 3}
       propertyPath: m_LocalPosition.z
+
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 689900830393497922, guid: 3fdbf98d268fed547996977c56d62ea4,
@@ -928,3 +930,4 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+
