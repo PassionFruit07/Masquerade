@@ -38,6 +38,7 @@ public class Brain : MonoBehaviour
 
     private void Start()
     {
+        //estado = EstadosDeJuego.intro;
 
         if (restart)
         {

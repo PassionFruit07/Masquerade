@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.65
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1194984588}
-  m_IndirectSpecularColor: {r: 0.002138612, g: 0.0027994316, b: 0.007936635, a: 0.65}
+  m_IndirectSpecularColor: {r: 0.002135509, g: 0.0027897835, b: 0.007932784, a: 0.65}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9291,7 +9291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!328 &412696676
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -9299,7 +9299,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412696675}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 9b30abae22e857640a998e7381ab6f96, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -60766,7 +60766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1936626248
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60793,7 +60793,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936626247}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
@@ -61621,7 +61621,7 @@ PlayableDirector:
   - key: {fileID: -7537086186154805017, guid: 68773e8ea3041c4409c3001ee1135d42, type: 2}
     value: {fileID: 5509101077907324487}
   - key: {fileID: 3612079686732679121, guid: 68773e8ea3041c4409c3001ee1135d42, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1199205320}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1976328017
