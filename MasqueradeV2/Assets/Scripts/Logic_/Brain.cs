@@ -158,5 +158,6 @@ public class Brain : MonoBehaviour
     {
         Debug.Log("ora si krnaaaal");
         CambiarEstado(EstadosDeJuego.normal);
+        FungusReactions.fungusCode.tpToStart();
     }
 }

@@ -9291,7 +9291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!328 &412696676
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -15943,6 +15943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fireworks
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576924614362489592, guid: 4a919ff208278c347a4582e77e55ed83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3576924614362489593, guid: 4a919ff208278c347a4582e77e55ed83,
         type: 3}
@@ -60766,7 +60771,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1936626248
 RectTransform:
   m_ObjectHideFlags: 0
