@@ -75,7 +75,9 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
+
     human: []
+
     skeleton:
     - name: Ybot(Clone)
       parentName: 
@@ -456,11 +458,13 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
+
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
+
   additionalBone: 0
   userData: 
   assetBundleName: 
