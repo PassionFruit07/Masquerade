@@ -44,18 +44,18 @@ public class RotationManager : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         lookP = false;
+        codeCart.m_Speed = speed;
         interactText.color = Color.clear;
         questSprite.color = new Color(1, 1, 1, 0);
-        codeCart.m_Speed = speed;
     }
 
     void LookPlayer()
     {
         playerToLook = new Vector3(player.position.x, transform.position.y, player.position.z);
         lookP = true;
-        interactText.color = Color.white;
-        questSprite.color = new Color(1, 1, 1, 1);
         codeCart.m_Speed = 0;
         transform.LookAt(playerToLook);
+        interactText.color = Color.white;
+        questSprite.color = new Color(1, 1, 1, 1);        
     }
 }
