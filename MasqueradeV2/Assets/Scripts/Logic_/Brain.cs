@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Brain : MonoBehaviour
 {
@@ -27,20 +28,23 @@ public class Brain : MonoBehaviour
         get => estado;
     }
 
-    private void Start()
+    private void Awake()
     {
         _brain = this;
+    }
+
+    private void Start()
+    {
+        //_brain = this;
         //SaveTrigger.saveTrigger.saveData.day = 4;
 
         if (restart)
         {
             SaveTrigger.saveTrigger.Guardar();
-            //aca va el reinico
         }
         else
         {
             SaveTrigger.saveTrigger.Cargar();
-            
         }
         
         if (SaveTrigger.saveTrigger.saveData.day >= 1)
