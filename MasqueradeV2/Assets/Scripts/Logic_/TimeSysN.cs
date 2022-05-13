@@ -51,6 +51,7 @@ public class TimeSysN : MonoBehaviour
         if (tiempo > duracionLoop)
         {
             contadorCampanas++;
+            tiempo = 0;
             FungusReactions.fungusCode.FirstBellText(SaveTrigger.saveTrigger.saveData.firstBell);
             SaveTrigger.saveTrigger.saveData.firstBell = true;
             SaveTrigger.saveTrigger.Guardar(); // guarda
@@ -68,17 +69,17 @@ public class TimeSysN : MonoBehaviour
                     campanaSonido.Play();
                     StartCoroutine(ActivarYDesactivarCamara());
                     break;
-                    case 2: // SE ROMPE LA CAMPANA, REPITO SE ROMPE LA MALDITA CAMPANA
-                        _bellRingAnim.bellRing(); // animación
-                        StartCoroutine(ActivarYDesactivarCamara());
-                        //campanaSonido.clip = otroClip;
-                        campanaSonido.Play(); // ESTE SONIDO DEBE DE CAMBIAR
-                        break;
-                    case 3: // SE ROMPE EL RELOJ, REPITO, SE ROMPE EL HPTA RELOJ
-                        _bellRingAnim.bellRing(); // animación 
-                        StartCoroutine(ActivarYDesactivarCamara()); // ESTOS SI DEBEN DE CAMBIAR POR OTROS METODOS
-                        campanaSonido.Play();
-                        break;
+                case 2: // SE ROMPE LA CAMPANA, REPITO SE ROMPE LA MALDITA CAMPANA
+                    _bellRingAnim.bellRing(); // animación
+                    StartCoroutine(ActivarYDesactivarCamara());
+                    //campanaSonido.clip = otroClip;
+                    campanaSonido.Play(); // ESTE SONIDO DEBE DE CAMBIAR
+                    break;
+                case 3: // SE ROMPE EL RELOJ, REPITO, SE ROMPE EL HPTA RELOJ
+                    _bellRingAnim.bellRing(); // animación 
+                    StartCoroutine(ActivarYDesactivarCamara()); // ESTOS SI DEBEN DE CAMBIAR POR OTROS METODOS
+                    campanaSonido.Play();
+                    break;
             }
             
             //contadorCampanas++;
@@ -93,8 +94,6 @@ public class TimeSysN : MonoBehaviour
             {
                 StartCoroutine(ReinicioEscena()); // EL TIMING DE ESTO DEBE DE CAMBIAR
             }
-            
-            tiempo = 0;
         }
     }
 
